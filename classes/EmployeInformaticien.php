@@ -33,4 +33,8 @@ class EmployeInformaticien extends Employe{
             $this->primeM = $primeM;
         }
     }
+    
+//    public function __toString() {
+//        return "Projet :" . $this->CodeProjet . " - ". $this->NomProjet. " - " . $this->DureePrevue;
+//    }
 }

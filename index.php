@@ -13,10 +13,11 @@ include 'classes/EmployeNonInformaticien.php';
 include 'classes/EmployeInformaticien.php';
 
 try{
-    traitement::instanciationUnEmploye();
+    //traitement::instanciationUnEmploye();
     //traitement::instanciationUnEmployeErreur();
     traitement::instanciationUnEmploye();
     traitement::instanciationProjetV1();
+    traitement::instanciationEmployeInformatiqueV1();
 }
  catch (Exception $ex) {
     echo $ex->getMessage();
