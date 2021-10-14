@@ -25,9 +25,10 @@ Class Traitement {
         echo "<br>Nom du projet = " . $p->getNomProjet();
     }
     
-    public function instanciationEmployeInformatiqueV1() {
+    public static function instanciationEmployeInformatiqueV1() {
         $p = new Projet('PR7', 'Librairie Galistout', 102);
         $informaticien = new EmployeInformaticien(2,'Dimont', 'Patrick', new DateTime("1980/07/12"), 1200, $p);
-        echo "Nom du Projet de l'employé numéro " . $informaticien->getNumero() ." : ". $informaticien->getNomProjet();
+        echo "Nom du Projet de l'employé numéro " . $informaticien->getNumero() ." : ". $informaticien->getProjet()->getNomProjet();
+        echo "<br>";
     }
 }

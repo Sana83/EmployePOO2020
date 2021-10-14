@@ -15,8 +15,8 @@ include 'classes/EmployeInformaticien.php';
 try{
     //traitement::instanciationUnEmploye();
     //traitement::instanciationUnEmployeErreur();
-    traitement::instanciationUnEmploye();
-    traitement::instanciationProjetV1();
+    //traitement::instanciationUnEmploye();
+    //traitement::instanciationProjetV1();
     traitement::instanciationEmployeInformatiqueV1();
 }
  catch (Exception $ex) {

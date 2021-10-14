@@ -13,15 +13,15 @@ class EmployeInformaticien extends Employe{
 
     public function __constuct(int $pnum, string $pnom, string $pprenom, DateTime $pddn, float $psalaire, float $primeM, projet $sonProjet){
         parent::__construct($pnum, $pnom, $pprenom, $pddn, $psalaire);
-        $this->prime = $primeM;
-        $this->projet = $sonProjet;
+        $this->primeM = $primeM;
+        $this->sonProjet = $sonProjet;
     }
     
     function getPrimeM() : float {
         return $this->primeM;
     }
     
-    function getProjet() : projet {
+    function getProjet() : Projet {
         return $this->sonProjet;
     }
 
@@ -35,6 +35,6 @@ class EmployeInformaticien extends Employe{
     }
     
 //    public function __toString() {
-//        return "Projet :" . $this->CodeProjet . " - ". $this->NomProjet. " - " . $this->DureePrevue;
+//        return "Informaticien :" . $this->$pnum . " - ". $this->$pnom. " - " . $this->pprenom. " - " . $this->dateDeNaissance->format('d/m/Y'). $this->$psalaire."<br>";
 //    }
 }
